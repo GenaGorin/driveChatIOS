@@ -1,11 +1,18 @@
 import React from 'react';
-import { StyleSheet, Text, View, ActivityIndicator, Alert, TouchableOpacity, Image } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  ActivityIndicator,
+  Alert,
+  TouchableOpacity,
+  Image,
+} from 'react-native';
 import MyMap from './src/components/myMap/MyMap';
-import GetLocation from 'react-native-get-location'
-import { policeGramm } from './src/api/api';
+import GetLocation from 'react-native-get-location';
+import {policeGramm} from './src/api/api';
 
 export default class App extends React.Component {
-
   state = {
     isLoaded: false,
     banInfo: {
@@ -28,60 +35,67 @@ export default class App extends React.Component {
     feebackData: [],
     markers: [],
     sponsorsData: [],
-  }
+  };
   i = 4;
 
   findMarkerId = (lat, lng) => {
-    let res = this.state.markers.filter((marker)=> marker.latitude == lat && marker.longitude == lng);
+    let res = this.state.markers.filter(
+      (marker) => marker.latitude == lat && marker.longitude == lng,
+    );
     return res[0].id;
-  }
+  };
 
   sendReport(reportData) {
     let markerId = this.findMarkerId(reportData.latitude, reportData.longitude);
     let description = reportData.description;
-    policeGramm.createReport(markerId, description)
+    policeGramm
+      .createReport(markerId, description)
       .then(function (response) {
         if (response.data === 'success') {
-          Alert.alert('Ваша жалоба будет рассмотрена')
+          Alert.alert('Ваша жалоба будет рассмотрена');
         } else {
-          Alert.alert('Вы уже жаловались на эту метку')
+          Alert.alert('Вы уже жаловались на эту метку');
         }
       })
       .catch(function (error) {
         console.log(error);
       });
-    }
+  }
 
-    incrementConfirms(markerId) {
-      let newMarkers = this.state.markers.map(marker => {
-        if (marker.id === markerId) {
-          marker.confirms++;
-          return marker;
-        }else {
-          return marker;
-        }
-      });
-      this.setState({
-        markers: newMarkers
-      })
-    }
+  incrementConfirms(markerId) {
+    let newMarkers = this.state.markers.map((marker) => {
+      if (marker.id === markerId) {
+        marker.confirms++;
+        return marker;
+      } else {
+        return marker;
+      }
+    });
+    this.setState({
+      markers: newMarkers,
+    });
+  }
 
-    sendMarkerConfirm(confirmData) {
-      let markerId = this.findMarkerId(confirmData.latitude, confirmData.longitude);
-      let self = this;
-      policeGramm.confirmMarker(markerId)
+  sendMarkerConfirm(confirmData) {
+    let markerId = this.findMarkerId(
+      confirmData.latitude,
+      confirmData.longitude,
+    );
+    let self = this;
+    policeGramm
+      .confirmMarker(markerId)
       .then(function (response) {
         if (response.data === 'Success') {
           self.incrementConfirms(markerId);
         } else {
-          Alert.alert('Вы уже подтверждали эту метку')
+          Alert.alert('Вы уже подтверждали эту метку');
           //console.log(response.data)
         }
       })
       .catch(function (error) {
         console.log(error);
       });
-    }
+  }
 
   hideModal() {
     this.setState({
@@ -96,17 +110,17 @@ export default class App extends React.Component {
 
     if (this.state.feebackData.length == 0) {
       let self = this;
-      policeGramm.getContacts()
+      policeGramm
+        .getContacts()
         .then(function (response) {
           self.setState({
-            feebackData: response.data
+            feebackData: response.data,
           });
         })
         .catch(function (error) {
           console.log(error);
         });
     }
-
   }
 
   changeSponsorsModal(bool) {
@@ -116,26 +130,27 @@ export default class App extends React.Component {
 
     if (this.state.sponsorsData.length == 0) {
       let self = this;
-      policeGramm.getSponsors()
+      policeGramm
+        .getSponsors()
         .then(function (response) {
           self.setState({
-            sponsorsData: response.data
-          })
-        })
-        .catch(function (error) {
-          console.log(error);
-        });
-
-        policeGramm.getContacts()
-        .then(function (response) {
-          self.setState({
-            feebackData: response.data
+            sponsorsData: response.data,
           });
         })
         .catch(function (error) {
           console.log(error);
         });
 
+      policeGramm
+        .getContacts()
+        .then(function (response) {
+          self.setState({
+            feebackData: response.data,
+          });
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
     }
   }
 
@@ -149,28 +164,29 @@ export default class App extends React.Component {
     });
 
     var self = this;
-    policeGramm.getMarkers(this.state.currentPosition)
+    policeGramm
+      .getMarkers(this.state.currentPosition)
       .then(function (response) {
         self.setState({
           markers: response.data.markerData,
           banInfo: {
             banStatus: response.data.banInfo.status,
-            banReason:  response.data.banInfo.reason,
-          }
+            banReason: response.data.banInfo.reason,
+          },
         });
       })
       .catch(function (error) {
         console.log(error);
       });
-
   }
 
   updateAppMarkers() {
     var self = this;
     self.setState({
-      showUpdateBtn: false
+      showUpdateBtn: false,
     });
-    policeGramm.getMarkers(this.state.currentPosition)
+    policeGramm
+      .getMarkers(this.state.currentPosition)
       .then(function (response) {
         self.setState({
           showUpdateBtn: true,
@@ -200,13 +216,14 @@ export default class App extends React.Component {
         longitude: coords.longitude,
       },
     });
-    policeGramm.createMarker(newMarker)
+    policeGramm
+      .createMarker(newMarker)
       .then(function (response) {
         if (response.data === 'Error-more-then-5-markers') {
           Alert.alert('Разрешено создавать не более 5 меток в сутки');
         } else {
           self.setState({
-            markers: [...self.state.markers, newMarker]
+            markers: [...self.state.markers, newMarker],
           });
         }
       })
@@ -214,25 +231,27 @@ export default class App extends React.Component {
         console.log(error);
       });
     this.i++;
-  }
+  };
 
   componentDidMount() {
     GetLocation.getCurrentPosition({
       enableHighAccuracy: true,
       timeout: 15000,
     })
-      .then(location => {
+      .then((location) => {
         this.loadApp(location);
       })
-      .catch(error => {
-        const { code, message } = error;
-        Alert.alert('Для корректной работы приложения разрешите доступ к геоданным');
+      .catch((error) => {
+        const {code, message} = error;
+        Alert.alert(
+          'Для корректной работы приложения разрешите доступ к геоданным',
+        );
         let location = {};
         location.latitude = 51.506737;
         location.longitude = 45.956049;
         this.loadApp(location);
         console.warn(code, message);
-      })
+      });
     /*
      navigator.geolocation.getCurrentPosition(
        (position) => this.loadApp(position),
@@ -243,34 +262,32 @@ export default class App extends React.Component {
   }
 
   render() {
-
-    return (
-      !this.state.isLoaded
-        ? <ActivityIndicator style={styles.loadApp} size="large" color="red" />
-        :
-        <MyMap
-          style={styles.map}
-          latitude={this.state.currentPosition.latitude}
-          longitude={this.state.currentPosition.longitude}
-          lastMarkerLatitude={this.state.afterMarkerCreateCoords.latitude}
-          lastMarkerLongitude={this.state.afterMarkerCreateCoords.longitude}
-          onRegionChange={this.state.onRegionChange}
-          markers={this.state.markers}
-          createNewMarker={this.createNewMarker}
-          updateAppMarkers={this.updateAppMarkers.bind(this)}
-          startModal={this.state.startModal}
-          hideModal={this.hideModal.bind(this)}
-          feedbackModal={this.state.feedbackModal}
-          chabgeFeedbcakModal={this.chabgeFeedbcakModal.bind(this)}
-          feedbackData={this.state.feebackData}
-          sponsorsModal = {this.state.sponsorsModal}
-          changeSponsorsModal = {this.changeSponsorsModal.bind(this)}
-          sponsorsData = {this.state.sponsorsData}
-          showUpdateBtn={this.state.showUpdateBtn}
-          sendReport = {this.sendReport.bind(this)}
-          banInfo = {this.state.banInfo}
-          sendMarkerConfirm = {this.sendMarkerConfirm.bind(this)}
-        />
+    return !this.state.isLoaded ? (
+      <ActivityIndicator style={styles.loadApp} size="large" color="red" />
+    ) : (
+      <MyMap
+        style={styles.map}
+        latitude={this.state.currentPosition.latitude}
+        longitude={this.state.currentPosition.longitude}
+        lastMarkerLatitude={this.state.afterMarkerCreateCoords.latitude}
+        lastMarkerLongitude={this.state.afterMarkerCreateCoords.longitude}
+        onRegionChange={this.state.onRegionChange}
+        markers={this.state.markers}
+        createNewMarker={this.createNewMarker}
+        updateAppMarkers={this.updateAppMarkers.bind(this)}
+        startModal={this.state.startModal}
+        hideModal={this.hideModal.bind(this)}
+        feedbackModal={this.state.feedbackModal}
+        chabgeFeedbcakModal={this.chabgeFeedbcakModal.bind(this)}
+        feedbackData={this.state.feebackData}
+        sponsorsModal={this.state.sponsorsModal}
+        changeSponsorsModal={this.changeSponsorsModal.bind(this)}
+        sponsorsData={this.state.sponsorsData}
+        showUpdateBtn={this.state.showUpdateBtn}
+        sendReport={this.sendReport.bind(this)}
+        banInfo={this.state.banInfo}
+        sendMarkerConfirm={this.sendMarkerConfirm.bind(this)}
+      />
     );
   }
 }
@@ -287,7 +304,7 @@ const styles = StyleSheet.create({
     right: 0,
     top: 0,
     bottom: 0,
-    position: 'absolute'
+    position: 'absolute',
   },
   loadApp: {
     top: 300,
