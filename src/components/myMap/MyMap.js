@@ -21,6 +21,7 @@ import {
 } from '../imagesArray/imagesArray';
 import GetLocation from 'react-native-get-location';
 import {ReportForm} from './reportForm/ReportForm';
+import {PresentForm} from './presentForm/PresentForm';
 
 export default MyMap = ({
   latitude,
@@ -42,11 +43,18 @@ export default MyMap = ({
   sponsorsModal,
   changeSponsorsModal,
   sponsorsData,
+  clicksOnContact,
+  incrementPresentViewsAndLinking,
 }) => {
   const fadeAnim = useRef(new Animated.Value(-200)).current;
 
   const showReport = (coords) => {
-    setFocusedMarkerToReport(coords);
+    let latitude = coords.latitude.toFixed(4);
+    let longitude = coords.longitude.toFixed(4);
+    let selectedMarker = markers.filter(
+      (marker) => marker.latitude == latitude && marker.longitude == longitude,
+    );
+    setFocusedMarkerToReport(selectedMarker);
     Animated.timing(fadeAnim, {
       toValue: 0,
       duration: 300,
@@ -54,7 +62,7 @@ export default MyMap = ({
     }).start();
   };
 
-  const [focusedMarkerToReport, setFocusedMarkerToReport] = useState('');
+  const [focusedMarkerToReport, setFocusedMarkerToReport] = useState([{}]);
 
   const hideReport = () => {
     Animated.timing(fadeAnim, {
@@ -175,6 +183,7 @@ export default MyMap = ({
         feedbackModal={feedbackModal}
         chabgeFeedbcakModal={chabgeFeedbcakModal}
         feedbackData={feedbackData}
+        clicksOnContact={clicksOnContact}
       />
       <SponsorsModal
         feedbackData={feedbackData}
@@ -338,12 +347,20 @@ export default MyMap = ({
               style={{width: 30, height: 30}}
             />
           </TouchableOpacity>
-          <ReportForm
-            sendMarkerConfirm={sendMarkerConfirm}
-            focusedMarkerToReport={focusedMarkerToReport}
-            sendReport={sendReport}
-            hideReport={hideReport}
-          />
+          {focusedMarkerToReport[0].title == 'АКЦИЯ' ? (
+            <PresentForm
+              focusedMarkerToReport={focusedMarkerToReport}
+              hideReport={hideReport}
+              incrementPresentViewsAndLinking={incrementPresentViewsAndLinking}
+            />
+          ) : (
+            <ReportForm
+              sendMarkerConfirm={sendMarkerConfirm}
+              focusedMarkerToReport={focusedMarkerToReport}
+              sendReport={sendReport}
+              hideReport={hideReport}
+            />
+          )}
         </Animated.View>
       )}
     </View>

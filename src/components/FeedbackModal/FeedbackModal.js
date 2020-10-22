@@ -7,7 +7,6 @@ import {
   Button,
   TouchableOpacity,
   Modal,
-  Linking,
   ActivityIndicator,
 } from 'react-native';
 
@@ -15,33 +14,10 @@ export default StartModal = ({
   feedbackModal,
   chabgeFeedbcakModal,
   feedbackData,
+  clicksOnContact,
 }) => {
-  const goInstagramm = () => {
-    const url = feedbackData[0].url;
-    Linking.openURL(url).catch((err) =>
-      console.error('An error occurred', err),
-    );
-  };
-
-  const goTelegramm = () => {
-    const url = feedbackData[1].url;
-    Linking.openURL(url).catch((err) =>
-      console.error('An error occurred', err),
-    );
-  };
-
-  const goDrivechat = () => {
-    const url = feedbackData[2].url;
-    Linking.openURL(url).catch((err) =>
-      console.error('An error occurred', err),
-    );
-  };
-
-  const goDonate = () => {
-    const url = feedbackData[3].url;
-    Linking.openURL(url).catch((err) =>
-      console.error('An error occurred', err),
-    );
+  const contactClick = (contactId) => {
+    clicksOnContact(contactId);
   };
 
   return (
@@ -62,7 +38,7 @@ export default StartModal = ({
               <Text>Наши контакты для сотрудничества и обратной связи</Text>
             </View>
             <TouchableOpacity
-              onPress={goInstagramm}
+              onPress={() => contactClick(1)}
               style={[styles.buttons, {backgroundColor: '#833ab4'}]}>
               <View style={{flexDirection: 'row'}}>
                 <Image
@@ -73,7 +49,7 @@ export default StartModal = ({
               </View>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={goTelegramm}
+              onPress={() => contactClick(2)}
               style={[styles.buttons, {backgroundColor: '#0088cc'}]}>
               <View style={{flexDirection: 'row'}}>
                 <Image
@@ -84,7 +60,7 @@ export default StartModal = ({
               </View>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={goDrivechat}
+              onPress={() => contactClick(3)}
               style={[styles.buttons, {backgroundColor: '#FDD138'}]}>
               <View style={{flexDirection: 'row'}}>
                 <Image
@@ -95,7 +71,7 @@ export default StartModal = ({
               </View>
             </TouchableOpacity>
             <TouchableOpacity
-              onPress={goDonate}
+              onPress={() => contactClick(4)}
               style={[styles.buttons, {backgroundColor: '#ffcc00'}]}>
               <View style={{flexDirection: 'row'}}>
                 <Image
@@ -108,12 +84,7 @@ export default StartModal = ({
           </>
         )}
         <TouchableOpacity
-          style={{
-            position: 'absolute',
-            right: 15,
-            top: 15,
-            //backgroundColor: 'red',
-          }}
+          style={{position: 'absolute', right: 15, top: 45}}
           activeOpacity={0.5}
           onPress={() => chabgeFeedbcakModal(false)}>
           <Image
@@ -129,9 +100,7 @@ export default StartModal = ({
 const styles = StyleSheet.create({
   header: {
     alignItems: 'center',
-    //justifyContent: 'center',
     marginBottom: 200,
-    marginTop: 50,
   },
   police: {
     color: 'black',

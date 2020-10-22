@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  StyleSheet,
-  Text,
-  View,
-  ActivityIndicator,
-  Alert,
-  TouchableOpacity,
-  Image,
-} from 'react-native';
+import {StyleSheet, ActivityIndicator, Alert, Linking} from 'react-native';
 import MyMap from './src/components/myMap/MyMap';
 import GetLocation from 'react-native-get-location';
 import {policeGramm} from './src/api/api';
@@ -45,8 +37,24 @@ export default class App extends React.Component {
     return res[0].id;
   };
 
+  clicksOnContact(contactId) {
+    let self = this;
+    let index = contactId - 1;
+    policeGramm
+      .clicksOnContact(contactId)
+      .then(function (response) {
+        const url = self.state.feebackData[index].url;
+        Linking.openURL(url).catch((err) =>
+          console.error('An error occurred', err),
+        );
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+
   sendReport(reportData) {
-    let markerId = this.findMarkerId(reportData.latitude, reportData.longitude);
+    let markerId = reportData.markerId;
     let description = reportData.description;
     policeGramm
       .createReport(markerId, description)
@@ -56,6 +64,19 @@ export default class App extends React.Component {
         } else {
           Alert.alert('Вы уже жаловались на эту метку');
         }
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+
+  incrementPresentViewsAndLinking(markerId, url) {
+    policeGramm
+      .incrementPresentViews(markerId)
+      .then(function (response) {
+        Linking.openURL(url).catch((err) =>
+          console.error('An error occurred', err),
+        );
       })
       .catch(function (error) {
         console.log(error);
@@ -76,11 +97,7 @@ export default class App extends React.Component {
     });
   }
 
-  sendMarkerConfirm(confirmData) {
-    let markerId = this.findMarkerId(
-      confirmData.latitude,
-      confirmData.longitude,
-    );
+  sendMarkerConfirm(markerId) {
     let self = this;
     policeGramm
       .confirmMarker(markerId)
@@ -287,6 +304,10 @@ export default class App extends React.Component {
         sendReport={this.sendReport.bind(this)}
         banInfo={this.state.banInfo}
         sendMarkerConfirm={this.sendMarkerConfirm.bind(this)}
+        clicksOnContact={this.clicksOnContact.bind(this)}
+        incrementPresentViewsAndLinking={this.incrementPresentViewsAndLinking.bind(
+          this,
+        )}
       />
     );
   }
