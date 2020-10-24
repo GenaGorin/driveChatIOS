@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* MapChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MapChatTests.m */; };
+		00E356F31AD99517003FC87E /* DriveChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* DriveChatTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* MapChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MapChatTests.m */; };
-		434CE20025E05C576424986C /* libPods-MapChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CADEA8285BFC9CCF46147E2 /* libPods-MapChat.a */; };
-		507278856589D7B488BBB9C8 /* libPods-MapChat-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1BE990A584EB0E4233D0E4 /* libPods-MapChat-tvOSTests.a */; };
-		5285A496BFA279FC63E67080 /* libPods-MapChat-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 072ACCE6DDD3AE61C35BFC84 /* libPods-MapChat-tvOS.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* DriveChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* DriveChatTests.m */; };
+		434CE20025E05C576424986C /* libPods-DriveChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CADEA8285BFC9CCF46147E2 /* libPods-DriveChat.a */; };
+		507278856589D7B488BBB9C8 /* libPods-DriveChat-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B1BE990A584EB0E4233D0E4 /* libPods-DriveChat-tvOSTests.a */; };
+		5285A496BFA279FC63E67080 /* libPods-DriveChat-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 072ACCE6DDD3AE61C35BFC84 /* libPods-DriveChat-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		E62BE945E5F01790F445CEE6 /* libPods-MapChat-MapChatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B881E745E82FBD78F3211EBC /* libPods-MapChat-MapChatTests.a */; };
+		E62BE945E5F01790F445CEE6 /* libPods-DriveChat-DriveChatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B881E745E82FBD78F3211EBC /* libPods-DriveChat-DriveChatTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,43 +28,43 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = MapChat;
+			remoteInfo = DriveChat;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "MapChat-tvOS";
+			remoteInfo = "DriveChat-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* MapChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* DriveChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriveChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* MapChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapChatTests.m; sourceTree = "<group>"; };
-		072ACCE6DDD3AE61C35BFC84 /* libPods-MapChat-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapChat-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* MapChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MapChat/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MapChat/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MapChat/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MapChat/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MapChat/main.m; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* MapChat-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MapChat-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* MapChat-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MapChat-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		560547AD4C2EB1BEF529F379 /* Pods-MapChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapChat.debug.xcconfig"; path = "Target Support Files/Pods-MapChat/Pods-MapChat.debug.xcconfig"; sourceTree = "<group>"; };
-		7B1BE990A584EB0E4233D0E4 /* libPods-MapChat-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapChat-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CADEA8285BFC9CCF46147E2 /* libPods-MapChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MapChat/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		81FC044D95020C17224002E8 /* Pods-MapChat-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapChat-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-MapChat-tvOS/Pods-MapChat-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		95E04A82F2220D8262C23C7E /* Pods-MapChat-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapChat-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-MapChat-tvOSTests/Pods-MapChat-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		A61FDF3D416422060FBB6237 /* Pods-MapChat-MapChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapChat-MapChatTests.debug.xcconfig"; path = "Target Support Files/Pods-MapChat-MapChatTests/Pods-MapChat-MapChatTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A94395B84DC7BEE7AFFBFF9D /* Pods-MapChat-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapChat-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-MapChat-tvOSTests/Pods-MapChat-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B881E745E82FBD78F3211EBC /* libPods-MapChat-MapChatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapChat-MapChatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9EFE5D956FBFC50F18C44B7 /* Pods-MapChat-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapChat-tvOS.release.xcconfig"; path = "Target Support Files/Pods-MapChat-tvOS/Pods-MapChat-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		D0C7CF72E1A93F7B786C20D1 /* Pods-MapChat-MapChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapChat-MapChatTests.release.xcconfig"; path = "Target Support Files/Pods-MapChat-MapChatTests/Pods-MapChat-MapChatTests.release.xcconfig"; sourceTree = "<group>"; };
-		EBC24A904AFF59BB73863F02 /* Pods-MapChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapChat.release.xcconfig"; path = "Target Support Files/Pods-MapChat/Pods-MapChat.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* DriveChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DriveChatTests.m; sourceTree = "<group>"; };
+		072ACCE6DDD3AE61C35BFC84 /* libPods-DriveChat-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DriveChat-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* DriveChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = DriveChat/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = DriveChat/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = DriveChat/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DriveChat/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DriveChat/main.m; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* DriveChat-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DriveChat-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* DriveChat-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DriveChat-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		560547AD4C2EB1BEF529F379 /* Pods-DriveChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveChat.debug.xcconfig"; path = "Target Support Files/Pods-DriveChat/Pods-DriveChat.debug.xcconfig"; sourceTree = "<group>"; };
+		7B1BE990A584EB0E4233D0E4 /* libPods-DriveChat-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DriveChat-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CADEA8285BFC9CCF46147E2 /* libPods-DriveChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DriveChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = DriveChat/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81FC044D95020C17224002E8 /* Pods-DriveChat-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveChat-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-DriveChat-tvOS/Pods-DriveChat-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		95E04A82F2220D8262C23C7E /* Pods-DriveChat-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveChat-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-DriveChat-tvOSTests/Pods-DriveChat-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		A61FDF3D416422060FBB6237 /* Pods-DriveChat-DriveChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveChat-DriveChatTests.debug.xcconfig"; path = "Target Support Files/Pods-DriveChat-DriveChatTests/Pods-DriveChat-DriveChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A94395B84DC7BEE7AFFBFF9D /* Pods-DriveChat-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveChat-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-DriveChat-tvOSTests/Pods-DriveChat-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B881E745E82FBD78F3211EBC /* libPods-DriveChat-DriveChatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DriveChat-DriveChatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9EFE5D956FBFC50F18C44B7 /* Pods-DriveChat-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveChat-tvOS.release.xcconfig"; path = "Target Support Files/Pods-DriveChat-tvOS/Pods-DriveChat-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		D0C7CF72E1A93F7B786C20D1 /* Pods-DriveChat-DriveChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveChat-DriveChatTests.release.xcconfig"; path = "Target Support Files/Pods-DriveChat-DriveChatTests/Pods-DriveChat-DriveChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		EBC24A904AFF59BB73863F02 /* Pods-DriveChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveChat.release.xcconfig"; path = "Target Support Files/Pods-DriveChat/Pods-DriveChat.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E62BE945E5F01790F445CEE6 /* libPods-MapChat-MapChatTests.a in Frameworks */,
+				E62BE945E5F01790F445CEE6 /* libPods-DriveChat-DriveChatTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				434CE20025E05C576424986C /* libPods-MapChat.a in Frameworks */,
+				434CE20025E05C576424986C /* libPods-DriveChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5285A496BFA279FC63E67080 /* libPods-MapChat-tvOS.a in Frameworks */,
+				5285A496BFA279FC63E67080 /* libPods-DriveChat-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				507278856589D7B488BBB9C8 /* libPods-MapChat-tvOSTests.a in Frameworks */,
+				507278856589D7B488BBB9C8 /* libPods-DriveChat-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* MapChatTests */ = {
+		00E356EF1AD99517003FC87E /* DriveChatTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* MapChatTests.m */,
+				00E356F21AD99517003FC87E /* DriveChatTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = MapChatTests;
+			path = DriveChatTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* MapChat */ = {
+		13B07FAE1A68108700A75B9A /* DriveChat */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,7 +133,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = MapChat;
+			name = DriveChat;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				7CADEA8285BFC9CCF46147E2 /* libPods-MapChat.a */,
-				B881E745E82FBD78F3211EBC /* libPods-MapChat-MapChatTests.a */,
-				072ACCE6DDD3AE61C35BFC84 /* libPods-MapChat-tvOS.a */,
-				7B1BE990A584EB0E4233D0E4 /* libPods-MapChat-tvOSTests.a */,
+				7CADEA8285BFC9CCF46147E2 /* libPods-DriveChat.a */,
+				B881E745E82FBD78F3211EBC /* libPods-DriveChat-DriveChatTests.a */,
+				072ACCE6DDD3AE61C35BFC84 /* libPods-DriveChat-tvOS.a */,
+				7B1BE990A584EB0E4233D0E4 /* libPods-DriveChat-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -152,14 +152,14 @@
 		37BF22E0AFFF04381DECADEB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				560547AD4C2EB1BEF529F379 /* Pods-MapChat.debug.xcconfig */,
-				EBC24A904AFF59BB73863F02 /* Pods-MapChat.release.xcconfig */,
-				A61FDF3D416422060FBB6237 /* Pods-MapChat-MapChatTests.debug.xcconfig */,
-				D0C7CF72E1A93F7B786C20D1 /* Pods-MapChat-MapChatTests.release.xcconfig */,
-				81FC044D95020C17224002E8 /* Pods-MapChat-tvOS.debug.xcconfig */,
-				C9EFE5D956FBFC50F18C44B7 /* Pods-MapChat-tvOS.release.xcconfig */,
-				A94395B84DC7BEE7AFFBFF9D /* Pods-MapChat-tvOSTests.debug.xcconfig */,
-				95E04A82F2220D8262C23C7E /* Pods-MapChat-tvOSTests.release.xcconfig */,
+				560547AD4C2EB1BEF529F379 /* Pods-DriveChat.debug.xcconfig */,
+				EBC24A904AFF59BB73863F02 /* Pods-DriveChat.release.xcconfig */,
+				A61FDF3D416422060FBB6237 /* Pods-DriveChat-DriveChatTests.debug.xcconfig */,
+				D0C7CF72E1A93F7B786C20D1 /* Pods-DriveChat-DriveChatTests.release.xcconfig */,
+				81FC044D95020C17224002E8 /* Pods-DriveChat-tvOS.debug.xcconfig */,
+				C9EFE5D956FBFC50F18C44B7 /* Pods-DriveChat-tvOS.release.xcconfig */,
+				A94395B84DC7BEE7AFFBFF9D /* Pods-DriveChat-tvOSTests.debug.xcconfig */,
+				95E04A82F2220D8262C23C7E /* Pods-DriveChat-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -175,9 +175,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* MapChat */,
+				13B07FAE1A68108700A75B9A /* DriveChat */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* MapChatTests */,
+				00E356EF1AD99517003FC87E /* DriveChatTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				37BF22E0AFFF04381DECADEB /* Pods */,
@@ -190,10 +190,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* MapChat.app */,
-				00E356EE1AD99517003FC87E /* MapChatTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* MapChat-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* MapChat-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* DriveChat.app */,
+				00E356EE1AD99517003FC87E /* DriveChatTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* DriveChat-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* DriveChat-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* MapChatTests */ = {
+		00E356ED1AD99517003FC87E /* DriveChatTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MapChatTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "DriveChatTests" */;
 			buildPhases = (
 				8B4C65BA77E9435F9E9A2BFF /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -216,14 +216,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = MapChatTests;
-			productName = MapChatTests;
-			productReference = 00E356EE1AD99517003FC87E /* MapChatTests.xctest */;
+			name = DriveChatTests;
+			productName = DriveChatTests;
+			productReference = 00E356EE1AD99517003FC87E /* DriveChatTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* MapChat */ = {
+		13B07F861A680F5B00A75B9A /* DriveChat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MapChat" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DriveChat" */;
 			buildPhases = (
 				E813635D42CCE50A6B975C62 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -237,14 +237,14 @@
 			);
 			dependencies = (
 			);
-			name = MapChat;
-			productName = MapChat;
-			productReference = 13B07F961A680F5B00A75B9A /* MapChat.app */;
+			name = DriveChat;
+			productName = DriveChat;
+			productReference = 13B07F961A680F5B00A75B9A /* DriveChat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* MapChat-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* DriveChat-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "MapChat-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DriveChat-tvOS" */;
 			buildPhases = (
 				B679B1C3AB9F95FE85E58FE0 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -257,14 +257,14 @@
 			);
 			dependencies = (
 			);
-			name = "MapChat-tvOS";
-			productName = "MapChat-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* MapChat-tvOS.app */;
+			name = "DriveChat-tvOS";
+			productName = "DriveChat-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* DriveChat-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* MapChat-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* DriveChat-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "MapChat-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DriveChat-tvOSTests" */;
 			buildPhases = (
 				BD4FE941C917F373CE58A3C5 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -276,9 +276,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "MapChat-tvOSTests";
-			productName = "MapChat-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* MapChat-tvOSTests.xctest */;
+			name = "DriveChat-tvOSTests";
+			productName = "DriveChat-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* DriveChat-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -307,7 +307,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MapChat" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "DriveChat" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -320,10 +320,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* MapChat */,
-				00E356ED1AD99517003FC87E /* MapChatTests */,
-				2D02E47A1E0B4A5D006451C7 /* MapChat-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* MapChat-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* DriveChat */,
+				00E356ED1AD99517003FC87E /* DriveChatTests */,
+				2D02E47A1E0B4A5D006451C7 /* DriveChat-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* DriveChat-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -406,7 +406,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MapChat-MapChatTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DriveChat-DriveChatTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -419,7 +419,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MapChat-MapChatTests/Pods-MapChat-MapChatTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DriveChat-DriveChatTests/Pods-DriveChat-DriveChatTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -428,7 +428,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapChat-MapChatTests/Pods-MapChat-MapChatTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DriveChat-DriveChatTests/Pods-DriveChat-DriveChatTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B679B1C3AB9F95FE85E58FE0 /* [CP] Check Pods Manifest.lock */ = {
@@ -446,7 +446,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MapChat-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DriveChat-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,7 +468,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MapChat-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DriveChat-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -481,7 +481,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MapChat/Pods-MapChat-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DriveChat/Pods-DriveChat-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -490,7 +490,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapChat/Pods-MapChat-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DriveChat/Pods-DriveChat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E813635D42CCE50A6B975C62 /* [CP] Check Pods Manifest.lock */ = {
@@ -508,7 +508,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MapChat-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DriveChat-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -560,7 +560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* MapChatTests.m in Sources */,
+				00E356F31AD99517003FC87E /* DriveChatTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* MapChatTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* DriveChatTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,12 +595,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* MapChat */;
+			target = 13B07F861A680F5B00A75B9A /* DriveChat */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* MapChat-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* DriveChat-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -608,14 +608,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A61FDF3D416422060FBB6237 /* Pods-MapChat-MapChatTests.debug.xcconfig */;
+			baseConfigurationReference = A61FDF3D416422060FBB6237 /* Pods-DriveChat-DriveChatTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = MapChatTests/Info.plist;
+				INFOPLIST_FILE = DriveChatTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -625,17 +625,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapChat.app/MapChat";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriveChat.app/DriveChat";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0C7CF72E1A93F7B786C20D1 /* Pods-MapChat-MapChatTests.release.xcconfig */;
+			baseConfigurationReference = D0C7CF72E1A93F7B786C20D1 /* Pods-DriveChat-DriveChatTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = MapChatTests/Info.plist;
+				INFOPLIST_FILE = DriveChatTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -645,19 +645,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapChat.app/MapChat";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriveChat.app/DriveChat";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 560547AD4C2EB1BEF529F379 /* Pods-MapChat.debug.xcconfig */;
+			baseConfigurationReference = 560547AD4C2EB1BEF529F379 /* Pods-DriveChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = MapChat/Info.plist;
+				INFOPLIST_FILE = DriveChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -665,7 +665,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = MapChat;
+				PRODUCT_NAME = DriveChat;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -674,12 +674,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EBC24A904AFF59BB73863F02 /* Pods-MapChat.release.xcconfig */;
+			baseConfigurationReference = EBC24A904AFF59BB73863F02 /* Pods-DriveChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = MapChat/Info.plist;
+				INFOPLIST_FILE = DriveChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -687,7 +687,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = MapChat;
+				PRODUCT_NAME = DriveChat;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -695,7 +695,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81FC044D95020C17224002E8 /* Pods-MapChat-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 81FC044D95020C17224002E8 /* Pods-DriveChat-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -706,14 +706,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "MapChat-tvOS/Info.plist";
+				INFOPLIST_FILE = "DriveChat-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.MapChat-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.DriveChat-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -723,7 +723,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9EFE5D956FBFC50F18C44B7 /* Pods-MapChat-tvOS.release.xcconfig */;
+			baseConfigurationReference = C9EFE5D956FBFC50F18C44B7 /* Pods-DriveChat-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -734,14 +734,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "MapChat-tvOS/Info.plist";
+				INFOPLIST_FILE = "DriveChat-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.MapChat-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.DriveChat-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -751,7 +751,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A94395B84DC7BEE7AFFBFF9D /* Pods-MapChat-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = A94395B84DC7BEE7AFFBFF9D /* Pods-DriveChat-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -761,24 +761,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "MapChat-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "DriveChat-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.MapChat-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.DriveChat-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapChat-tvOS.app/MapChat-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriveChat-tvOS.app/DriveChat-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95E04A82F2220D8262C23C7E /* Pods-MapChat-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 95E04A82F2220D8262C23C7E /* Pods-DriveChat-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -788,17 +788,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "MapChat-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "DriveChat-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.MapChat-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.DriveChat-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MapChat-tvOS.app/MapChat-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriveChat-tvOS.app/DriveChat-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -919,7 +919,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "MapChatTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "DriveChatTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -928,7 +928,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "MapChat" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DriveChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -937,7 +937,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "MapChat-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DriveChat-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -946,7 +946,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "MapChat-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "DriveChat-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -955,7 +955,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "MapChat" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "DriveChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
