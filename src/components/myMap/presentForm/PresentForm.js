@@ -25,7 +25,7 @@ export const PresentForm = ({
         <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
           <View style={{alignItems: 'center'}}>
             <TouchableOpacity
-              style={[styles.reportButton, {backgroundColor: '#edec86'}]}
+              style={[styles.reportButton, {backgroundColor: '#AEE80D'}]}
               activeOpacity={0.5}
               onPress={() =>
                 incrementPresentViewsAndLinking(

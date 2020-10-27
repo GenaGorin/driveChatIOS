@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   Modal,
 } from 'react-native';
+import GestureRecognizer, {swipeDirections} from 'react-native-swipe-gestures';
 
 export default StartModal = ({startModal, hideModal}) => {
   const imageArray = [
@@ -36,64 +37,74 @@ export default StartModal = ({startModal, hideModal}) => {
     setImageIndex(newIndex);
   };
 
+  const config = {
+    horizontal: true,
+    directionalOffsetThreshold: 50,
+    velocityThreshold: 0.7,
+  };
+
   return (
-    <Modal visible={startModal}>
-      <View style={styles.header}>
-        <Text style={styles.welcomeText}>Добро пожаловать в</Text>
-        <View style={styles.policegrammWrapper}>
-          <Text style={styles.police}>Drive</Text>
-          <Text style={styles.police}>Chat</Text>
-        </View>
-        <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
-          <TouchableOpacity style={styles.arrows} onPress={leftImage}>
+    <GestureRecognizer
+      onSwipeLeft={rightImage}
+      onSwipeRight={leftImage}
+      config={config}
+      style={{
+        flex: 1,
+        backgroundColor: 'red',
+      }}>
+      <Modal visible={startModal}>
+        <View style={styles.header}>
+          <Text style={styles.welcomeText}>Добро пожаловать в</Text>
+          <View style={styles.policegrammWrapper}>
+            <Text style={styles.police}>Drive</Text>
+            <Text style={styles.police}>Chat</Text>
+          </View>
+          <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+            <TouchableOpacity style={styles.arrows} onPress={leftImage}>
+              <Image
+                source={require('../../images/controls/left.png')}
+                style={{width: 60, height: 30}}
+              />
+            </TouchableOpacity>
             <Image
-              source={require('../../images/controls/left.png')}
-              style={{width: 60, height: 30}}
+              source={imageArray[imageIndex]}
+              style={{width: 270, height: 230, marginBottom: 90}}
             />
-          </TouchableOpacity>
-          <Image
-            source={imageArray[imageIndex]}
-            style={{width: 270, height: 230, marginBottom: 90}}
-          />
-          <TouchableOpacity style={styles.arrows} onPress={rightImage}>
-            <Image
-              source={require('../../images/controls/right.png')}
-              style={{width: 60, height: 30}}
-            />
+            <TouchableOpacity style={styles.arrows} onPress={rightImage}>
+              <Image
+                source={require('../../images/controls/right.png')}
+                style={{width: 60, height: 30}}
+              />
+            </TouchableOpacity>
+          </View>
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'space-around',
+              marginBottom: 30,
+            }}>
+            <TouchableOpacity
+              onPress={() => setImageIndex(0)}
+              style={
+                imageIndex == 0 ? styles.activeRound : styles.round
+              }></TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setImageIndex(1)}
+              style={
+                imageIndex == 1 ? styles.activeRound : styles.round
+              }></TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => setImageIndex(2)}
+              style={
+                imageIndex == 2 ? styles.activeRound : styles.round
+              }></TouchableOpacity>
+          </View>
+          <TouchableOpacity style={styles.startBtn} onPress={() => hideModal()}>
+            <Text style={styles.startBtnText}>НАЧАТЬ</Text>
           </TouchableOpacity>
         </View>
-        <View
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'space-around',
-            marginBottom: 30,
-          }}>
-          <TouchableOpacity
-            onPress={() => setImageIndex(0)}
-            style={
-              imageIndex == 0 ? styles.activeRound : styles.round
-            }></TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => setImageIndex(1)}
-            style={
-              imageIndex == 1 ? styles.activeRound : styles.round
-            }></TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => setImageIndex(2)}
-            style={
-              imageIndex == 2 ? styles.activeRound : styles.round
-            }></TouchableOpacity>
-        </View>
-        <TouchableOpacity
-          style={styles.goToMyPositionIcon}
-          onPress={() => hideModal()}>
-          <Image
-            source={require('../../images/controls/start_btn.png')}
-            style={{width: 180, height: 50}}
-          />
-        </TouchableOpacity>
-      </View>
-    </Modal>
+      </Modal>
+    </GestureRecognizer>
   );
 };
 
@@ -105,6 +116,7 @@ const styles = StyleSheet.create({
   },
   welcomeText: {
     fontSize: 24,
+    //fontWeight: 'bold',
     color: '#777777',
   },
   police: {
@@ -134,5 +146,18 @@ const styles = StyleSheet.create({
     backgroundColor: '#aeaeae',
     marginTop: -2.5,
     marginLeft: 5,
+  },
+  startBtn: {
+    width: 180,
+    height: 50,
+    backgroundColor: '#AEE80D',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10,
+  },
+  startBtnText: {
+    color: '#fff',
+    fontSize: 20,
+    fontWeight: 'bold',
   },
 });

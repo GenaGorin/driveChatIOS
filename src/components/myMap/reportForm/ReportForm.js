@@ -50,14 +50,14 @@ export const ReportForm = ({
         <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
           <View style={{alignItems: 'center'}}>
             <TouchableOpacity
-              style={[styles.reportButton, {backgroundColor: '#92EF85'}]}
+              style={[styles.reportButton, {backgroundColor: '#AEE80D'}]}
               activeOpacity={0.5}
               onPress={() => confirmMarker()}>
               <Image
                 source={require('../../../images/controls/accept.png')}
                 style={{width: 20, height: 20, marginRight: 10}}
               />
-              <Text style={{color: '#fff', fontSize: 14}}>ПОДТВЕРДИТЬ</Text>
+              <Text style={{color: '#fff', fontSize: 12}}>ПОДТВЕРДИТЬ</Text>
             </TouchableOpacity>
           </View>
           <View style={{alignItems: 'center'}}>
@@ -69,7 +69,7 @@ export const ReportForm = ({
                 source={require('../../../images/controls/warning.png')}
                 style={{width: 23, height: 20, marginRight: 10}}
               />
-              <Text style={{color: '#fff', fontSize: 14}}>ПОЖАЛОВАТЬСЯ</Text>
+              <Text style={{color: '#fff', fontSize: 12}}>ПОЖАЛОВАТЬСЯ</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   reportButton: {
-    width: 160,
+    width: 150,
     height: 45,
     //backgroundColor: '#d5d8d9',
     borderRadius: 10,

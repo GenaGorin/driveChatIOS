@@ -64,7 +64,9 @@ export default StartModal = ({
                   </View>
                   <View style={styles.singleSponsorMessage}>
                     <Text>
-                      {sponsor.message} --- {sponsor.name}{' '}
+                      <Text>
+                        {sponsor.message} ({sponsor.name}){' '}
+                      </Text>
                     </Text>
                   </View>
                   <View style={styles.singleSponsorSumBlock}>
@@ -121,10 +123,9 @@ const styles = StyleSheet.create({
     width: 85,
   },
   singleSponsorMessage: {
-    maxWidth: 300,
     paddingLeft: 10,
-    minWidth: 300,
     paddingTop: 5,
+    width: 240,
   },
   buttons: {
     width: 200,
