@@ -58,7 +58,11 @@ export default StartModal = ({startModal, hideModal}) => {
             <Text style={styles.police}>Drive</Text>
             <Text style={styles.police}>Chat</Text>
           </View>
-          <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'space-around',
+            }}>
             <TouchableOpacity style={styles.arrows} onPress={leftImage}>
               <Image
                 source={require('../../images/controls/left.png')}
@@ -67,7 +71,7 @@ export default StartModal = ({startModal, hideModal}) => {
             </TouchableOpacity>
             <Image
               source={imageArray[imageIndex]}
-              style={{width: 270, height: 230, marginBottom: 90}}
+              style={{width: 270, height: 198, marginBottom: 50}}
             />
             <TouchableOpacity style={styles.arrows} onPress={rightImage}>
               <Image
