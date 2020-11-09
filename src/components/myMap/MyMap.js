@@ -45,6 +45,8 @@ export default MyMap = ({
   sponsorsData,
   clicksOnContact,
   incrementPresentViewsAndLinking,
+  withCameras,
+  changeCamerasVisible,
 }) => {
   const fadeAnim = useRef(new Animated.Value(-200)).current;
 
@@ -228,6 +230,17 @@ export default MyMap = ({
           bottom: 45,
           zIndex: 100,
         }}>
+        <TouchableOpacity
+          style={
+            withCameras ? styles.updateNew : [styles.updateNew, {opacity: 0.5}]
+          }
+          activeOpacity={0.5}
+          onPress={() => changeCamerasVisible()}>
+          <Image
+            source={require('../../images/controls/camera.png')}
+            style={{width: 20, height: 20, paddingTop: 10, paddingLeft: 10}}
+          />
+        </TouchableOpacity>
         <TouchableOpacity
           style={styles.updateNew}
           activeOpacity={0.5}

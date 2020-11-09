@@ -27,6 +27,10 @@ export default class App extends React.Component {
     feebackData: [],
     markers: [],
     sponsorsData: [],
+    showedMarkers: {
+      withCameras: true,
+      markers: [],
+    },
   };
   i = 4;
 
@@ -190,6 +194,10 @@ export default class App extends React.Component {
             banStatus: response.data.banInfo.status,
             banReason: response.data.banInfo.reason,
           },
+          showedMarkers: {
+            markers: response.data.markerData,
+            withCameras: true,
+          },
         });
       })
       .catch(function (error) {
@@ -208,6 +216,10 @@ export default class App extends React.Component {
         self.setState({
           showUpdateBtn: true,
           markers: response.data.markerData,
+          showedMarkers: {
+            markers: response.data.markerData,
+            withCameras: true,
+          },
         });
       })
       .catch(function (error) {
@@ -241,6 +253,10 @@ export default class App extends React.Component {
         } else {
           self.setState({
             markers: [...self.state.markers, newMarker],
+            showedMarkers: {
+              markers: [...self.state.markers, newMarker],
+              withCameras: true,
+            },
           });
         }
       })
@@ -249,6 +265,27 @@ export default class App extends React.Component {
       });
     this.i++;
   };
+
+  changeCamerasVisible() {
+    if (this.state.showedMarkers.withCameras) {
+      let newMarkers = this.state.markers.filter(
+        (marker) => marker.title != 'КАМЕРА',
+      );
+      this.setState({
+        showedMarkers: {
+          withCameras: false,
+          markers: newMarkers,
+        },
+      });
+    } else {
+      this.setState({
+        showedMarkers: {
+          withCameras: true,
+          markers: this.state.markers,
+        },
+      });
+    }
+  }
 
   componentDidMount() {
     GetLocation.getCurrentPosition({
@@ -289,7 +326,9 @@ export default class App extends React.Component {
         lastMarkerLatitude={this.state.afterMarkerCreateCoords.latitude}
         lastMarkerLongitude={this.state.afterMarkerCreateCoords.longitude}
         onRegionChange={this.state.onRegionChange}
-        markers={this.state.markers}
+        markers={this.state.showedMarkers.markers}
+        withCameras={this.state.showedMarkers.withCameras}
+        changeCamerasVisible={this.changeCamerasVisible.bind(this)}
         createNewMarker={this.createNewMarker}
         updateAppMarkers={this.updateAppMarkers.bind(this)}
         startModal={this.state.startModal}
